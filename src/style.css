@@ -1,0 +1,52 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/ibm-plex-mono/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    @apply bg-surface-base text-text-primary;
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    background-color: #c9a96e30;
+  }
+}
+
+@layer components {
+  .filter-btn {
+    @apply font-mono text-xs tracking-widest2 uppercase px-3 py-2.5 border border-surface-border text-text-muted transition-colors duration-100;
+    /* min 44px touch target height */
+    min-height: 44px;
+  }
+  .filter-btn:hover {
+    @apply text-text-secondary border-text-muted;
+  }
+  .filter-btn.active {
+    @apply bg-surface-overlay text-text-primary border-surface-overlay;
+  }
+
+
+  /* hide scrollbar on filter rows while keeping scroll functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
