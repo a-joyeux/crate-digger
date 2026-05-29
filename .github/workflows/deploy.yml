@@ -29,7 +29,7 @@ jobs:
 
       - run: npm run build
         env:
-          VITE_BASE_URL: ${{ vars.VITE_BASE_URL || '/' }}
+          VITE_BASE_URL: ${{ vars.VITE_BASE_URL || '/crate-digger/' }}
           VITE_PROXY_URL: ${{ vars.VITE_PROXY_URL }}
 
       - uses: actions/upload-pages-artifact@v3
