@@ -127,7 +127,7 @@ function formatTime(s: number): string {
       <button class="ctrl-sym ctrl-sym--primary" @click="$emit('togglePlayPause')">
         <span v-if="isBuffering" class="text-sm tracking-widest">···</span>
         <span v-else-if="status === 'paused'">▶</span>
-        <span v-else>II</span>
+        <span v-else>⏸</span>
       </button>
 
       <button class="ctrl-sym" @click="$emit('skip')">→</button>
