@@ -29,15 +29,15 @@
 
 @layer components {
   .filter-btn {
-    @apply font-mono text-xs tracking-widest2 uppercase px-3 py-2.5 border border-surface-border text-text-muted transition-colors duration-100;
+    @apply font-mono text-xs tracking-widest2 uppercase px-3 py-2.5 border border-surface-border text-text-secondary transition-colors duration-100;
     /* min 44px touch target height */
     min-height: 44px;
   }
   .filter-btn:hover {
-    @apply text-text-secondary border-text-muted;
+    @apply text-text-primary border-text-muted;
   }
   .filter-btn.active {
-    @apply bg-surface-overlay text-text-primary border-surface-overlay;
+    @apply bg-surface-overlay text-text-accent border-text-muted;
   }
 
 

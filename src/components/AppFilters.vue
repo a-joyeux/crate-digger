@@ -14,7 +14,7 @@ defineEmits<{
   <div class="flex flex-col gap-2">
     <!-- ERA row -->
     <div class="flex items-center gap-3 min-w-0">
-      <span class="font-mono text-xs text-text-muted shrink-0 w-10 tracking-widest2 uppercase">ERA</span>
+      <span class="font-mono text-xs text-text-secondary shrink-0 w-10 tracking-widest2 uppercase">ERA</span>
       <div class="-mr-5 pr-5 flex gap-1.5 overflow-x-auto scrollbar-hide">
         <button
           class="filter-btn shrink-0"
@@ -33,7 +33,7 @@ defineEmits<{
 
     <!-- GENRE row -->
     <div class="flex items-center gap-3 min-w-0">
-      <span class="font-mono text-xs text-text-muted shrink-0 w-10 tracking-widest2 uppercase">GNR</span>
+      <span class="font-mono text-xs text-text-secondary shrink-0 w-10 tracking-widest2 uppercase">GNR</span>
       <div class="-mr-5 pr-5 flex gap-1.5 overflow-x-auto scrollbar-hide">
         <button
           class="filter-btn shrink-0"
